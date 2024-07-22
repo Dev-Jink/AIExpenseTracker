@@ -34,12 +34,12 @@ struct ContentView: View {
                 Label("Expenses", systemImage: "tray")
             }
             
-            NavigationStack {
-                Text("AI Assistant")
-            }
-            .tabItem {
-                Label("Assistant", systemImage: "waveform")
-            }.tag(1)
+//            NavigationStack {
+//                Text("AI Assistant")
+//            }
+//            .tabItem {
+//                Label("Assistant", systemImage: "waveform")
+//            }.tag(1)
         }
     }
     
@@ -49,9 +49,9 @@ struct ContentView: View {
                 NavigationLink(destination: LogListContainerView(vm: $vm)) {
                     Label("Expenses", systemImage: "tray")
                 }
-                NavigationLink(destination: Text("AI Assistant")) {
-                    Label("Assistant", systemImage: "waveform")
-                }
+//                NavigationLink(destination: Text("AI Assistant")) {
+//                    Label("Assistant", systemImage: "waveform")
+//                }
             }
         } detail: {
             LogListContainerView(vm: $vm)
